@@ -1,0 +1,41 @@
+git --version
+git config --global user.name "Beilei Zhang"
+git config --global user.email "czzbl@hotmail.com"
+
+git config --list
+clear
+
+git config user.email
+
+git help -a
+git help commit
+
+pwd (where we are now)
+ls
+cd
+
+git init  (initialize repository)
+git add . (add all files) (working copy->staging area->repository)
+git commit -m "This is RDR ALS first commit"
+git log
+git log --author="Beilei"
+git status
+
+git add .
+git diff
+git diff --staged
+
+git rm third.txt
+git commit -m "this is the point we delete the file"
+
+git mv gitcmd.txt GitCmd.txt (rename file name)
+
+
+git commit -am "sss" (commit directly to repository, add+commit, everything in working copy, only works with edits with a few filess)
+
+git checkout -- GitCmd.txt
+
+git reset HEAD testcmd.txt (remove from staging area)
+
+git checkout  bd595516 -- testcmd.txt (go back to the previous version)
+git commit -am "go back to older version"
